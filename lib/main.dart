@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:poke_apps/presentation/screens/home_screen.dart';
+import 'package:poke_apps/presentation/theme/theme.dart';
 
 void main() {
   runApp(const PokeApp());
@@ -11,11 +12,8 @@ class PokeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      title: 'Poke Apps',
+      theme: pokeAppTheme,
       home: const HomeScreen(),
     );
   }

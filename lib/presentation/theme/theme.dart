@@ -4,11 +4,17 @@ import 'package:poke_apps/presentation/theme/color.dart';
 import 'package:poke_apps/presentation/theme/text_style.dart';
 
 // Define the theme
-final ThemeData appTheme = ThemeData(
+final ThemeData pokeAppTheme = ThemeData(
   primaryColor: primaryColor,
   textTheme: TextTheme(
-    displayLarge: headerStyle,
-    bodyLarge: bodyStyle,
+    displayLarge: displayLarge,
+    titleLarge: titleLarge,
+    titleMedium: titleMedium,
+    titleSmall: titleSmall,
+    bodyLarge: bodyLarge,
+    bodyMedium: bodyMedium,
+    bodySmall: bodySmall,
+    labelSmall: labelSmall,
   ),
   appBarTheme: AppBarTheme(
     color: primaryColor,
